@@ -60,21 +60,29 @@ public class Animal {
         System.out.println("Welcome To Little Animal Horror ZOO");
         System.out.println("--------------------------");
 
-       do {
-           rabbit.moveUpandRight();
-           snake.moveDownAndLeft();
 
+       do {
+
+            // pause for 1 seconds
            try {
-               Thread.sleep(1000); // pause for 1 seconds
+               Thread.sleep(1000);
            } catch (InterruptedException e) {
                e.printStackTrace();
            }
 
+           //rabbit moves up and right
+           rabbit.moveUpandRight();
+
+           //checks if snake is less than one position from rabbit if yes if statement execute
            if (snake.getPositionY() - rabbit.getPositionY() <= 1){
                System.out.println("Nooooo please dont eat me snake");
                snake.tellPositionSnakeKill();
                break;
            }
+
+           //if is false snake moves down and left
+           snake.moveDownAndLeft();
+
        } while (true);
 
     }
