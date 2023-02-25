@@ -11,5 +11,6 @@ The game consists of 2 animals: a rabbit and a snake. The screen consists of coo
 So both the rabbit and the snake should be able to move. And they should both be able to tell about their position. The snake should be able to kill the rabbit if they are on the same coordinates. And the rabbit should be able to ask for mercy just before it is killed, maybe if the snake is on a neighboring square.
 
 The game could look something like this:
+
 <img width="477" alt="LittleAnimalHorror" src="https://user-images.githubusercontent.com/90601111/221364461-9ee32334-f368-401f-ad97-26f6fa42e589.png">
 
